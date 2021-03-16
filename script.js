@@ -88,7 +88,7 @@ function guess(btn) {
       } else {
         progress++;
         playClueSequence();
-      }
+      }a
     } else {
       guessCounter++;
       clueHoldTime = clueHoldTime * 0.9;
