@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 * [ ] More than 4 functional game buttons
 * [x] Playback speeds up on each turn
 * [x] Computer picks a different pattern each time the game is played
-* [ ] Player only loses after 3 mistakes (instead of on the first mistake)
+* [X] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
@@ -44,10 +44,11 @@ Here's a walkthrough of implemented user stories:
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+No external resources except some javascript syntax lookup:
+https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+My first challenge is to figure out the hidden logic for the guess() function. It took me some time to understand the process of how this game is created  
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
