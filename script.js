@@ -1,9 +1,13 @@
+// global constants
+const clueHoldTime = 1000; //how long to hold each clue's light/sound
+
 //Global Variables
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
+
 
 function startGame() {
   //initialize game variables
@@ -29,6 +33,13 @@ function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit")
 }
 
+function playSingleClue(btn){
+  if(gamePlaying){
+    lightButton(btn);
+    playTone(btn,clueHoldTime);
+    setTimeout(clearButton,clueHoldTime,btn);
+  }
+}
 
 
 // Sound Synthesis Functions
