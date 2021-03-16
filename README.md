@@ -39,7 +39,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](your-link-here)
+<img src='https://github.com/q815101630/colorSoundGame/blob/main/1.gif' />
+<img src='https://github.com/q815101630/colorSoundGame/blob/main/2.gif' />
+<img src='https://github.com/q815101630/colorSoundGame/blob/main/3.gif' />
 
 
 ## Reflection Questions
