@@ -59,7 +59,7 @@ https://stackoverflow.com/questions/4959975/generate-random-number-between-two-n
 
   ​     
 
-1. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
+3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 
   * How does the backend be involved in the general web development such as in this game? I know that we can create a database for different players to record their higher scores by database for the instance of this game, but how can we link it with JavaScript? 
 
@@ -71,7 +71,7 @@ https://stackoverflow.com/questions/4959975/generate-random-number-between-two-n
 
     
 
-2. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
   I would like to try make the user interface more modern and beautiful such as a webpage that  people always like to visit.  Because this game is concise enough, the components that I would like to add include better styled font, size, background for the whole webpage. Also, if possible, I am interested to create another html file for introduction usage, playing the role of index. Instead, the game page is another specific page linked from the index page. By doing so, the player can understand the rule of the game,  watch some video about this game (by embedding Youtube or html video player). 
 
