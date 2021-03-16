@@ -19,9 +19,15 @@ function stopGame(){
   gamePlaying = false;
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
-  
 }
 
+function lightButton(btn){
+  document.getElementById("button"+btn).classList.add("lit")
+}
+
+function clearButton(btn){
+  document.getElementById("button"+btn).classList.remove("lit")
+}
 
 
 
