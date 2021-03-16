@@ -55,13 +55,30 @@ function playClueSequence(){
   }
 }
 
+function loseGame(){
+  stopGame();
+  alert("Game Over. You lost.");
+}
+
+function winGame(){
+  stopGame();
+  alert("Game Over. You won!.");
+}
+
 function guess(btn){
   console.log("user guessed: " + btn);
   if(!gamePlaying){
     return;
   }
-
-  // add game logic here
+  if(pattern[guessCounter]==btn){
+    if(guessCounter == progress){
+      if()
+    }
+  } else{
+    loseGame();
+  }
+  
+  }
 }
 
 // Sound Synthesis Functions
@@ -91,15 +108,6 @@ function stopTone(){
     tonePlaying = false
 }
 
-function loseGame(){
-  stopGame();
-  alert("Game Over. You lost.");
-}
-
-function winGame(){
-  stopGame();
-  alert("Game Over. You won!.");
-}
 
 //Page Initialization
 // Init Sound Synthesizer
