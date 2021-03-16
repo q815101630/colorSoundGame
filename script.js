@@ -3,23 +3,26 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [];
+var pattern;
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
-var clueHoldTime = 1000; 
+var clueHoldTime = 1000;
+var numMissAllow = 2;
 
-function generatePattern(pattern){
-  pattern = []
-  for (var i=0; i< 7; i++){
-    pattern.append(Math.floor(Math.random() * 4) + 1 )
+function generatePattern() {
+  pattern = [];
+  for (var i = 0; i < 6; i++) {
+    pattern.push(Math.floor(Math.random() * 4) + 1);
   }
 }
 
 function startGame() {
   //initialize game variables
+  numMissAllow = 2;
+  generatePattern();
   progress = 0;
   gamePlaying = true;
   // swap the Start and Stop buttons
@@ -88,10 +91,17 @@ function guess(btn) {
       }
     } else {
       guessCounter++;
-      clueHoldTime = clueHoldTime*0.9;
+      clueHoldTime = clueHoldTime * 0.9;
     }
   } else {
-    loseGame();
+    if (numMissAllow != 0) {
+      numMissAllow--;
+      if(numMissAllow == 1) alert("You have 1 allowed mistake left! Be careful!");
+      if(numMissAllow == 0) alert("You have 0 allowed mistake left! Be careful!");
+      return;
+    } else {
+      loseGame();
+    }
   }
 }
 
